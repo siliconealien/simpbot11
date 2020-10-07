@@ -12,7 +12,7 @@ client.on('message', message => {
 	} else if (message.content === `!beholdme`) {
 message.channel.send('`    _....,_         _,...._    `\n`_.-\' _,..,_\'.     .\'_,..,_ \'-._`\n` _,-\'/ o \u005C \'.     .\' / o \u005C\'-,_ `\n`  \'-.\u005C___/.-\'     \'-.\u005C___/.-\'  `');
 } else if (message.content === `!nyaa`) {
-	message.channel.send('Hewwo Jon >:3');
+	message.channel.send('Hewwo Jon >:3c');
 	}
 });
 
