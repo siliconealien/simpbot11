@@ -14,4 +14,4 @@ message.channel.send('Test! :eye:');
 	}
 });
 
-client.login('NzYyNDkxNDc3Mzc2NDk5NzU0.X3p7hg.H621MFAdJi1aFWujhiPOawfJdjQ');
+client.login('TOKEN');
