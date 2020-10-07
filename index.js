@@ -17,7 +17,7 @@ client.on('message', message => {
 	}
 	else if (message.content === `!ping`) {
 	message.channel.send('Pushed to github!');
-}
-});
+	}
+	});
 
 client.login(process.env.TOKEN);
