@@ -14,6 +14,9 @@ message.channel.send('`    _....,_         _,...._    `\n`_.-\' _,..,_\'.     .\
 } else if (message.content === `!nyaa`) {
 	message.channel.send('Hewwo Jon >:3c');
 	}
+} else if (message.content === `!ping`) {
+	message.channel.send('Pushed to github!');
+	}
 });
 
 client.login(process.env.TOKEN);
