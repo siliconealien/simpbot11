@@ -14,7 +14,7 @@ client.on('message', message => {
 		    message.react("👎")
 		    message.pin()
 		    message.delete()
-		    }).catch(function() {
+			}).catch(function();
 		              //Something
 
 
