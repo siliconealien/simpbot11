@@ -1,7 +1,7 @@
 {
   "name": "simpbot11",
   "version": "1.0.0",
-  "description": "",
+  "description": "A Discord bot for Eliasfuckers nyaa",
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
