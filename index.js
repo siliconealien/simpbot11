@@ -15,7 +15,7 @@ client.on('message', message => {
 	  message.channel.send('Hewwo Jon >:3c');
 	}
 	  else if (message.content === '!jurgen') {
-	  message.react('763666740042661898');
+	  message.react('714387828913733643');
 }
 });
 
