@@ -14,7 +14,7 @@ client.on('message', message => {
   } else if (message.content === `!nyaa`) {
 	  message.channel.send('Hewwo Jon >:3c');
 	}
-	  else if (message.content === '!jurgen') {
+	  else if (message.content.includes('Jurgen Leitner')) {
 	  message.react('714387828913733643');
 }
 });
