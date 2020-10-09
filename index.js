@@ -15,7 +15,7 @@ client.on('message', message => {
   } else if (message.content.startsWith(config.prefix + "nyaa")) {
 	  message.channel.send('Hewwo Jon >:3c');
 	} else if (message.content.startsWith(config.prefix + "s4shelp")) {
-		message.channel.send('Use `!s4splay` to start a game of Simp 4 Simp!\n**My dear Jonah ...**\n(Or, "What does this button do??")\n`!beholdme`\n`!nyaa`');
+		message.channel.send('Use `!s4splay` to start a game of Simp 4 Simp!\n\n**My dear Jonah ...**\n(Or, "What does this button do??")\n`!beholdme`\n`!nyaa`');
 	} else if (message.content.includes('Jurgen Leitner')) {
 	  message.react('714387828913733643');
 }
