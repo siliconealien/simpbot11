@@ -14,8 +14,9 @@ client.on('message', message => {
     message.channel.send('`    _....,_         _,...._    `\n`_.-\' _,..,_\'.     .\'_,..,_ \'-._`\n` _,-\'/ o \u005C \'.     .\' / o \u005C\'-,_ `\n`  \'-.\u005C___/.-\'     \'-.\u005C___/.-\'  `');
   } else if (message.content.startsWith(config.prefix + "nyaa")) {
 	  message.channel.send('Hewwo Jon >:3c');
-	}
-	  else if (message.content.includes('Jurgen Leitner')) {
+	} else if (message.content.startsWith(config.prefix + "s4shelp")) {
+		message.channel.send('Use `!s4splay` to start a game of Simp 4 Simp!\n**My dear Jonah ...**\n(Or, "What does this button do??")\n`!beholdme`\n`!nyaa`');
+	} else if (message.content.includes('Jurgen Leitner')) {
 	  message.react('714387828913733643');
 }
 });
