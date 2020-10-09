@@ -16,14 +16,14 @@ client.on('message', message => {
   } else if (message.content.startsWith(config.prefix + "nyaa")) {
 	  message.channel.send('Hewwo Jon >:3c');
 	} else if (message.content.startsWith(config.prefix + "s4shelp")) {
-		message.channel.send('Use `!s4splay` to start a game of Simp 4 Simp!\n\n**My dear Jonah ...**\n(Or, "What does this button do??")\n`!beholdme`\n`!nyaa`');
+		message.channel.send('Use `!s4splay` to start a game of Simp 4 Simp!\n\n**My dear Jonah ...**\n(Or, "What does this button do??")\n`!beholdme`\n`!nyaa`\n`!pipeme`');
 	} else if (message.content.includes('Jurgen Leitner')) {
 	  message.react('714387828913733643');
 }
 });
 
 client.on('message', message => {
-	if (message.content.startsWith (config.prefix + "pipe")) {
+	if (message.content.startsWith (config.prefix + "pipeme")) {
 	message.channel.send ("You want the pipe?", {files: ["./img/pipe.jpg"]})
 }
 });
