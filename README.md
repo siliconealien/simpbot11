@@ -1,6 +1,6 @@
 # Simp-bot
 
-Simp-bot is an in-progress Discord bot made by and for Magnus Archives fangirls and boys.  You know, specifically the type that read and write smutty Regency period fanfiction.
+Simp-bot is an in-progress Discord bot made by and for Magnus Archives fangirls and boys.  Or whatever you are ... just so long as you are specifically the type to read and write smutty Regency period fanfiction.
 
 The bot is the host of Simp 4 Simp, an interactive text-based adventure game where you play a party guest at the Magnus Estate in 1824.
 
