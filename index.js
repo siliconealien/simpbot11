@@ -5,7 +5,7 @@ const config = require("./config.json");
 
 client.once('ready', () => {
 	console.log('Ready!');
-  client.user.setActivity('you like a cheap whistle | !s4shelp');
+  client.user.setActivity('you like a cheap whistle - !s4shelp');
 });
 
 client.on('message', message => {
