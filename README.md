@@ -8,7 +8,7 @@ Will you seduce one of Jonah's historical simps?  Will you fall victim to Behold
 
 ## Disclaimer
 
-Simp-bot is intended as a transformative fanwork and we have zero intent to try to make money off it!!  He is a labor of love and if anything we are likelier to lose money maintaining him lol.  The characters belong entirely to Rusty Quill Ltd.  Thank you for letting us abuse them :)
+Simp-bot is meant as a transformative fanwork and we have zero intent to try to make money off it!!  He is a labor of love and if anything we are likelier to lose money maintaining him lol.  The characters belong entirely to Rusty Quill Ltd.  Thank you for letting us abuse them :)
 
 ## Team
 
