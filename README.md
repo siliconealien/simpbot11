@@ -6,6 +6,10 @@ The bot is the host of Simp 4 Simp, an interactive text-based adventure game whe
 
 Will you seduce one of Jonah's historical simps?  Will you fall victim to Beholding and gouge out your eyes?  Are there catboys??  Stay tuned!
 
+## Disclaimer
+
+Simp-bot is intended as a transformative fanwork and we have zero intent to try to make money off it!!  He is a labor of love and if anything we are likelier to lose money maintaining him lol.  The characters belong entirely to Rusty Quill Ltd.  Thank you for letting us abuse them :)
+
 ## Team
 
 [siliconealien](https://siliconealien.tumblr.com/) | [itsthecheat](https://lesliethe.dev/)
