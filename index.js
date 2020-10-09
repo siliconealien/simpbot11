@@ -22,4 +22,10 @@ client.on('message', message => {
 }
 });
 
+client.on('message', message => {
+	if (message.content.startsWith (config.prefix + "pipe")) {
+	message.channel.send ("You want the pipe?", {files: ["./img/pipe.jpg"]})
+}
+});
+
 client.login(process.env.TOKEN);
