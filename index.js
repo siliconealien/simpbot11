@@ -28,4 +28,10 @@ client.on('message', message => {
 }
 });
 
+client.on('message', message => {
+	if (message.content.startsWith (config.prefix + "s4sicon")) {
+	message.channel.send ("**Bastard man artist cred**\nTwitter: __@WaldosAkimbo__\nTumblr: __waldos-art__", {files: ["./img/jonah.png"]})
+}
+});
+
 client.login(process.env.TOKEN);
