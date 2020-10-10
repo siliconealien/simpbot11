@@ -23,8 +23,6 @@ client.on('message', message => {
 	  message.react('714387828913733643');
 	} else if (message.content.includes('jurgen leitner')) {
 		message.react('714387828913733643');
-	} else if (message.content.includes('siliconealien')) {
-		message.react('725052424837922901');
 }
 });
 
