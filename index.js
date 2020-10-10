@@ -5,7 +5,7 @@ const config = require("./config.json");
 
 client.once('ready', () => {
 	console.log('Ready!');
-  client.user.setActivity('you like a cheap whistle - !s4shelp');
+  client.user.setActivity('you like a cheap whistle - !sbhelp');
 });
 
 client.on('message', message => {
@@ -15,7 +15,7 @@ client.on('message', message => {
     message.channel.send('`    _....,_         _,...._    `\n`_.-\' _,..,_\'.     .\'_,..,_ \'-._`\n` _,-\'/ o \u005C \'.     .\' / o \u005C\'-,_ `\n`  \'-.\u005C___/.-\'     \'-.\u005C___/.-\'  `');
   } else if (message.content.startsWith(config.prefix + "nyaa")) {
 	  message.channel.send('Hewwo Jon >:3c');
-	} else if (message.content.startsWith(config.prefix + "s4shelp")) {
+	} else if (message.content.startsWith(config.prefix + "sbhelp")) {
 		message.channel.send('Use `!s4splay` to start a game of Simp 4 Simp!\n\n**My dear Jonah ...**\n(Or, "What does this button do??")\n`!beholdme`\n`!nyaa`\n`!pipeme`\n\n`!s4sicon` - icon artist credit\n\n:eye: *Please follow @simpbot11 on Twitter!* :eye:');
 	} else if (message.content.includes('Jurgen Leitner')) {
 	  message.react('714387828913733643');
