@@ -16,7 +16,7 @@ client.on('message', message => {
   } else if (message.content.startsWith(config.prefix + "nyaa")) {
 	  message.channel.send('Hewwo Jon >:3c');
 	} else if (message.content.startsWith(config.prefix + "sbhelp")) {
-		message.channel.send('Use `!s4splay` to start a game of Simp 4 Simp!\n\n**My dear Jonah ...**\n(Or, "What does this button do??")\n`!beholdme`\n`!nyaa`\n`!pipeme`\n\n`!s4sicon` - icon artist credit\n\n:eye: *Please follow @simpbot11 on Twitter!* :eye:');
+		message.channel.send('Use `!s4splay` to start a game of Simp 4 Simp!\n\n**My dear Jonah ...**\n(Or, "What does this button do??")\n`!beholdme`\n`!nyaa`\n`!pipeme`\n\n`!sbicon` - icon artist credit\n\n:eye: *Please follow @simpbot11 on Twitter!* :eye:');
 	} else if (message.content.includes('Jurgen Leitner')) {
 	  message.react('714387828913733643');
 	} else if (message.content.includes('jurgen leitner')) {
@@ -33,7 +33,7 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-	if (message.content.startsWith (config.prefix + "s4sicon")) {
+	if (message.content.startsWith (config.prefix + "sbicon")) {
 	message.channel.send ("**Bastard man artist cred**\nTwitter: __@WaldosAkimbo__\nTumblr: __waldos-art__", {files: ["./img/jonah.png"]})
 }
 });
