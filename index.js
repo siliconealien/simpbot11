@@ -4,6 +4,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const { prefix } = require("./config.json");
 const { checkServerIdentity } = require('tls');
+const { execute } = require('./commands/help');
 
 // client.commands = new Discord.Collection();
 // const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
@@ -36,7 +37,7 @@ client.once('ready', () => {
 
 client.on('message', message => {
 	if (message.content.startsWith(`${prefix}s4splay`)) {
-		client.commands.get()
+		client.commands.get('play').execute(message, args)
 	} else if (message.content.startsWith(`${prefix}beholdme`)) {
     message.channel.send('`    _....,_         _,...._    `\n`_.-\' _,..,_\'.     .\'_,..,_ \'-._`\n` _,-\'/ o \u005C \'.     .\' / o \u005C\'-,_ `\n`  \'-.\u005C___/.-\'     \'-.\u005C___/.-\'  `');
   } else if (message.content.startsWith(`${prefix}nyaa`)) {
