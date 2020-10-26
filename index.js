@@ -12,20 +12,22 @@ for (const file of commandFiles) {
 	const command = require(`./commands/${file}`);
 	client.commands.set(command.name, command)
 }
+
 client.once('ready', () => {
 	console.log('Ready!');
 	client.user.setActivity('you like a cheap whistle - !sbhelp');
 });
+
 client.on('message', message => {
 	if (!message.content.startsWith(prefix) || message.author.bot) return;
 
 	const args = message.content.slice(prefix.length).trim().split(/ +/);
 	const command = args.shift().toLowerCase();
-
+	
 	if (!client.commands.has(command)) return;
-
 	try {
 		client.commands.get(command).execute(message, args);
+		console.log(command)
 	} catch (error) {
 		console.error(error);
 		message.reply('Error!');
