@@ -12,4 +12,4 @@ Simp-bot is meant as a transformative fanwork and we have zero intent to try to 
 
 ## Team
 
-[siliconealien](https://siliconealien.tumblr.com/) | [itsthecheat](https://lesliethe.dev/)
+[siliconealien](https://twitter.com/simpbot11) | [itsthecheat](https://lesliethe.dev/)
