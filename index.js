@@ -28,12 +28,16 @@ client.on('message', message => {
 	if (!client.commands.has(command)) return;
 	try {
 		client.commands.get(command).execute(message, args);
-		console.log(command)
 	} catch (error) {
 		console.error(error);
 		message.reply('Error!');
 	}
+	// var gameState = new Map()
+	// exports.gameState = gameState.set(command)
+	// console.log(gameState)
 });
+
+
 
 client.on('message', message => {
 	if (message.content.startsWith(`${prefix}nyaa`)) {
@@ -48,3 +52,4 @@ client.on('message', message => {
 });
 
 client.login(process.env.TOKEN);
+
