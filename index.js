@@ -29,13 +29,12 @@ client.on('message', message => {
 	
 	try {
 		client.commands.get(command).execute(message, args);
+		console.log(args)
 	} catch (error) {
 		console.error(error);
 		message.reply('Error!');
 	}
 });
-
-
 
 client.on('message', message => {
 	if (message.content.startsWith(`${prefix}nyaa`)) {
