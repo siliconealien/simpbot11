@@ -4,7 +4,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const { prefix } = require("./config.json");
 const { checkServerIdentity } = require('tls');
-const { execute } = require('./commands/help');
+// const { execute } = require('./commands/help');
 
 client.commands = new Discord.Collection();
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
@@ -32,9 +32,6 @@ client.on('message', message => {
 		console.error(error);
 		message.reply('Error!');
 	}
-	// var gameState = new Map()
-	// exports.gameState = gameState.set(command)
-	// console.log(gameState)
 });
 
 
