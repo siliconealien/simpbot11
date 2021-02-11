@@ -1,12 +1,12 @@
 require('dotenv').config()
 const fs = require('fs');
 const Discord = require('discord.js');
-const client = new Discord.Client();
 const { prefix } = require("./config.json");
 const { checkServerIdentity } = require('tls');
-// const { execute } = require('./commands/help');
 
+const client = new Discord.Client();
 client.commands = new Discord.Collection();
+
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
 
 for (const file of commandFiles) {
@@ -26,6 +26,7 @@ client.on('message', message => {
 	const command = args.shift().toLowerCase();
 	
 	if (!client.commands.has(command)) return;
+	
 	try {
 		client.commands.get(command).execute(message, args);
 	} catch (error) {
@@ -36,17 +37,17 @@ client.on('message', message => {
 
 
 
-client.on('message', message => {
-	if (message.content.startsWith(`${prefix}nyaa`)) {
-		message.channel.send('Hewwo Jon >:3c');
-	} else if (message.content.includes('Jurgen Leitner')) {
-		message.react('714387828913733643');
-	} else if (message.content.includes('jurgen leitner')) {
-		message.react('714387828913733643');
-	} else if (message.content.startsWith(`${prefix}sbicon`)) {
-		message.channel.send("**Bastard man artist cred**\nTwitter: __@WaldosAkimbo__\nTumblr: __waldos-art__", { files: ["./img/jonah.png"] })
-	};
-});
+// client.on('message', message => {
+// 	if (message.content.startsWith(`${prefix}nyaa`)) {
+// 		message.channel.send('Hewwo Jon >:3c');
+// 	} else if (message.content.includes('Jurgen Leitner')) {
+// 		message.react('714387828913733643');
+// 	} else if (message.content.includes('jurgen leitner')) {
+// 		message.react('714387828913733643');
+// 	} else if (message.content.startsWith(`${prefix}sbicon`)) {
+// 		message.channel.send("**Bastard man artist cred**\nTwitter: __@WaldosAkimbo__\nTumblr: __waldos-art__", { files: ["./img/jonah.png"] })
+// 	};
+// });
 
 client.login(process.env.TOKEN);
 
