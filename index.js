@@ -3,6 +3,7 @@ const fs = require('fs');
 const Discord = require('discord.js');
 const { prefix } = require("./config.json");
 const { checkServerIdentity } = require('tls');
+const story = require("./story/simpforsimp.json")
 
 const client = new Discord.Client();
 client.commands = new Discord.Collection();
