@@ -49,5 +49,5 @@ client.on('message', message => {
 	};
 });
 
-client.login("NTk0ODU2NzM0MjAwMjk5NTMw.XRihgQ.GEpTiZx-qjt3Qi2BZ4PhrgA5PI8");
+client.login(process.env.TOKEN);
 
