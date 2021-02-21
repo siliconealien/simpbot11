@@ -25,9 +25,9 @@ client.on('message', message => {
 
 	const args = message.content.slice(prefix.length).trim().split(/ +/);
 	const command = args.shift().toLowerCase();
-	
+
 	if (!client.commands.has(command)) return;
-	
+
 	try {
 		client.commands.get(command).execute(message, args);
 		console.log(args)
@@ -49,5 +49,4 @@ client.on('message', message => {
 	};
 });
 
-client.login("NTk0ODU2NzM0MjAwMjk5NTMw.XRihgQ.GEpTiZx-qjt3Qi2BZ4PhrgA5PI8");
-
+client.login("process.env.TOKEN");
