@@ -28,7 +28,7 @@ module.exports = {
                                     }
                             }).catch((err) => { x = message.author; console.log(err)
                                     if(err.toString().match("time"))
-                                    	x.send('No reaction after five minutes, the archive is closed (operation canceled).');
+                                    	x.send('No reaction after five minutes, the archive is closed.');
                                     else {
                                     	x.send(err)
                                     }
@@ -101,7 +101,7 @@ async function playstory(name , message, id){
 
                             }).catch((err) => { var x = msg.client.users.cache.get(id)
 
-                                    	x.send('No reaction after five minutes, the archive is closed (operation canceled).');
+                                    	x.send('No reaction after five minutes, the archive is closed.');
 
                             });
 
