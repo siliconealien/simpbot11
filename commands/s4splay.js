@@ -6,7 +6,7 @@ module.exports = {
     name: 's4splay',
     description: 's4splay',
     execute: async function(message, args) {
-        let description = "`                                `\n`   () o                    |  | `\n`   /\u005C     _  _  _     _    |__|_`\n`  /  \u005C|  / |/ |/ |  |/ \u005C_     | `\n` /(__/|_/  |  |  |_/|__/      | `\n`   () o            /|           `\n`   /\u005C     _  _  _  \u005C| _         `\n`  /  \u005C|  / |/ |/ |  |/ \u005C_       `\n` /(__/|_/  |  |  |_/|__/        `\n`                   /|           `\n`                   \u005C|           `\n\n`Version 2.0`\n`by SiliconeAlien`\n`& ItsTheCheat`\n\n*An Interactive Text-Based Jonah Magnus Smut Adventure*\n\n`* N * S * F * W *`\n\n`==============================`\n\n\n Pick 🅰️ to start over or pick 🅱️ to continue from where you've left."
+        let description = "`                                `\n`   () o                    |  | `\n`   /\u005C     _  _  _     _    |__|_`\n`  /  \u005C|  / |/ |/ |  |/ \u005C_     | `\n` /(__/|_/  |  |  |_/|__/      | `\n`   () o            /|           `\n`   /\u005C     _  _  _  \u005C| _         `\n`  /  \u005C|  / |/ |/ |  |/ \u005C_       `\n` /(__/|_/  |  |  |_/|__/        `\n`                   /|           `\n`                   \u005C|           `\n\n`Version 2.0`\n`Contributors:`\n`siliconealien`\n`itsthecheat`\n`kaly666`\n\n*An Interactive Text-Based Jonah Magnus Smut Adventure*\n\n`* N * S * F * W *`\n\n`==============================`\n\n\n Pick 🅰️ to start over or pick 🅱️ to continue from where you've left."
         const msg = await message.author.send(description).catch(() => console.log("User has DMs off"))
         const emojis = ['🅰️', '🅱️']
         for (const emoji of emojis) msg.react(emoji)
