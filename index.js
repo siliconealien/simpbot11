@@ -41,10 +41,6 @@ client.on('message', message => {
 client.on('message', message => {
 	if (message.content.startsWith(`${prefix}nyaa`)) {
 		message.channel.send('Hewwo Jon >:3c');
-	} else if (message.content.includes('Jurgen Leitner')) {
-		message.react('714387828913733643');
-	} else if (message.content.includes('jurgen leitner')) {
-		message.react('714387828913733643');
 	} else if (message.content.startsWith(`${prefix}sbicon`)) {
 		message.channel.send("**Bastard man artist cred**\nTwitter: __@WaldosAkimbo__\nTumblr: __waldos-art__", { files: ["./img/jonah.png"] })
 	};
