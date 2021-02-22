@@ -18,9 +18,9 @@ module.exports = {
                             	var where = await database.get(message.author.id);
 
                                     if (collected.first().emoji.name == '🅰️') {
-                                            playstory("beginning" , msg, message.author.id) 
+                                            playstory("beginning" , msg, message.author.id)
                                     }
-                                    else if (collected.first().emoji.name == '🅱️' && where) { 
+                                    else if (collected.first().emoji.name == '🅱️' && where) {
                                             playstory( where , msg, message.author.id )
                                     }
                                     else {
@@ -67,6 +67,7 @@ async function playstory(name , message, id){
 		case "bbjonahwatches": n = story.bbjonahwatches; break;
 		case "jmarchivist": n = story.jmarchivist; break;
 		case "jmkillsyou": n = story.jmkillsyou; break;
+    case "jmseduce": n = story.jmseduce; break;
 		case "jfdemandanswers": n = story.jfdemandanswers; break;
 		case "jmbalcony": n = story.jmbalcony; break;
 		case "jmmagshawe": n = story.jmmagshawe; break;
@@ -90,12 +91,12 @@ async function playstory(name , message, id){
                                     if (collected.first().emoji.name == '🅰️') {
                                             playstory(n.optionA , msg, id);
                                             database.set(id , n.optionA);
-                                            
+
                                     }
                                     else if (collected.first().emoji.name == '🅱️') {
                                             playstory(n.optionB , msg, id);
                                             database.set(id , n.optionB);
-                                            
+
                                     }
 
                             }).catch((err) => { var x = msg.client.users.cache.get(id)
