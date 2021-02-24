@@ -28,7 +28,7 @@ module.exports = {
                                     }
                             }).catch((err) => { x = message.author; console.log(err)
                                     if(err.toString().match("time"))
-                                    	x.send('No reaction after five minutes, archive is closed (operation canceled).');
+                                    	x.send('No reaction after five minutes, the archive is closed (operation canceled).');
                                     else {
                                     	x.send(err)
                                     }
@@ -44,34 +44,34 @@ async function playstory(name , message, id){
 	var n;
 
 	switch (name) {
+    case "x00barnabasintro": n = story.x00barnabasintro; break;
+    case "x00fanshaweintro": n = story.x00fanshaweintro; break;
+    case "x00jonahintro": n = story.x00jonahintro; break;
 		case "x00mordechaiintro": n = story.x00mordechaiintro; break;
-		case "mllonelystart": n = story.mllonelystart; break;
-		case "mlrescued": n = story.mlrescued; break;
-		case "x00barnabasintro": n = story.x00barnabasintro; break;
-		case "bbaskaboutparty": n = story.bbaskaboutparty; break;
-		case "bbseduce": n = story.bbseduce; break;
-		case "bbwatch": n = story.bbwatch; break;
-		case "x00fanshaweintro": n = story.x00fanshaweintro; break;
+    case "bbaskaboutparty": n = story.bbaskaboutparty; break;
+    case "bbjonahbas": n = story.bbjonahbas; break;
+    case "bbjonahwatches": n = story.bbjonahwatches; break;
+    case "bbseduce": n = story.bbseduce; break;
+    case "bbwatch": n = story.bbwatch; break;
+    case "jfbarnshawe": n = story.jfbarnshawe; break;
+    case "jfcaughtbyjonah": n = story.jfcaughtbyjonah; break;
+    case "jfdemandanswers": n = story.jfdemandanswers; break;
+    case "jflightenup": n = story.jflightenup; break;
+    case "jfmatchmaker": n = story.jfmatchmaker; break;
+    case "jfgiveprivacy": n = story.jfgiveprivacy; break;
 		case "jfquestionsstart": n = story.jfquestionsstart; break;
-		case "jflightenup": n = story.jflightenup; break;
 		case "jfseduce": n = story.jfseduce; break;
-		case "jfcaughtbyjonah": n = story.jfcaughtbyjonah; break;
 		case "jmapologizeforjon": n = story.jmapologizeforjon; break;
-		case "jfmatchmaker": n = story.jfmatchmaker; break;
-		case "jfgiveprivacy": n = story.jfgiveprivacy; break;
-		case "jmsupernatural": n = story.jmsupernatural; break;
-		case "x00jonahintro": n = story.x00jonahintro; break;
-		case "mlmarry": n = story.mlmarry; break;
-		case "mlkillsyou": n = story.mlkillsyou; break;
-		case "bbjonahbas": n = story.bbjonahbas; break;
-		case "bbjonahwatches": n = story.bbjonahwatches; break;
-		case "jmarchivist": n = story.jmarchivist; break;
-		case "jmkillsyou": n = story.jmkillsyou; break;
+    case "jmarchivist": n = story.jmarchivist; break;
+    case "jmbalcony": n = story.jmbalcony; break;
+    case "jmkillsyou": n = story.jmkillsyou; break;
+    case "jmmagshawe": n = story.jmmagshawe; break;
     case "jmseduce": n = story.jmseduce; break;
-		case "jfdemandanswers": n = story.jfdemandanswers; break;
-		case "jmbalcony": n = story.jmbalcony; break;
-		case "jmmagshawe": n = story.jmmagshawe; break;
-		case "jfbarnshawe": n = story.jfbarnshawe; break;
+		case "jmsupernatural": n = story.jmsupernatural; break;
+		case "mlkillsyou": n = story.mlkillsyou; break;
+    case "mllonelystart": n = story.mllonelystart; break;
+    case "mlmarry": n = story.mlmarry; break;
+    case "mlrescued": n = story.mlrescued; break;
 		default : n = story.beginning; break;
 	}
 
@@ -101,7 +101,7 @@ async function playstory(name , message, id){
 
                             }).catch((err) => { var x = msg.client.users.cache.get(id)
 
-                                    	x.send('No reaction after five minutes, archive is closed (operation canceled).');
+                                    	x.send('No reaction after five minutes, the archive is closed (operation canceled).');
 
                             });
 
