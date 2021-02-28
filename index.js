@@ -18,7 +18,7 @@ for (const file of commandFiles) {
 
 client.once('ready', () => {
 	console.log('Ready!');
-	client.user.setActivity('you like a cheap whistle - !sbhelp');
+	client.user.setActivity(`you like a cheap whistle | !sbhelp in ${client.guilds.cache.size} servers`);
 });
 
 client.on('message', message => {
