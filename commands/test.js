@@ -7,5 +7,5 @@ module.exports = {
   		]
   		if (message.content.startsWith(`${prefix}test`)) {
   		   message.channel.send(`${responses[Math.floor(Math.random() * responses.length)]}`);
-  		}
-  });
+  		},
+  };
