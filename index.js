@@ -55,4 +55,19 @@ client.on('message', message => {
 		}
 });
 
+client.on('message', message => {
+		const list1 = [
+		   'Basira Hussain', 'Oliver Banks', 'Maxwell Rayner (human-shaped)', 'Father Burroughs', 'Benoît Maçon', 'Jordan Kennedy', 'Natalie Ennis', 'Jonathan Sims (season 5)', 'Albrecht von Closen', 'Robert Smirke', 'Annabelle Cane', 'Gregor Orsinov', 'Melanie King', 'Timothy Stoker', 'Jonah Magnus (circa 1800s)', 'Monster Pig', 'Trevor Herbert', 'Graham Folger (original)', 'Dr. Lionel Elliott (bone apple teeth)', 'Gertrude Robinson', 'Zhang Xiaoling', 'Nathaniel Lukas', 'Jude Perry', 'Toby Carlisle', 'Barnabas Bennett', 'Neil Lagorio', '"Tom" (Not!Sasha\'s totally real boyfriend)', 'Martin\'s mother', 'Joshua Gillespie', 'a wholeass Lukas family gangbang', 'Eric Delano', 'Gerard Keay (alive)'
+		]
+		const list2 = [
+			 'Elias Bouchard (Jonah Magnus)', 'Not!Graham Folger', 'Martin Blackwood', 'John Amherst', 'Manuela Dominguez', 'Daniel Rawlings (Not!Daniel, the taxidermist)', 'Diego Molina', 'Alice "Daisy" Tonner (human)', 'Jared Hopworth', 'Evan Lukas', 'Peter Lukas', 'Adelard Dekker', 'Rosie Zampano', 'Michael Crew', 'Arthur Nolan', 'Jack Barnabas', 'Not!Sasha', 'Dr. Jane Doe', 'Stranger!Tim', 'Benjamin Hatendi', 'Michael Shelley (human)', 'Jonathan Sims (season 2)', 'the Anatomy Class', 'Maxwell Rayner (black goo)', 'Raymond Fielding', 'Jonah/Elias as the post-Change static-spewing dark entity', 'Jonathan Sims (season 4)', 'Robert Montauk', 'Karolina Karolina Górka (took a nice nap on the tube)', 'Mary Keay', 'Tom Haan', 'Helen (the Distortion)'
+		]
+		const list3 = [
+			 'Helen Richardson (human)', 'Danny Stoker', 'Fiona Law', 'Agnes Montague', 'Jurgen Leitner', 'Alfred Grifter', 'Sebastian Skinner (unobservant plumber)', 'the Angler Fish', 'Jonathan Sims (season 3)', 'Hezekiah Wakely', 'Dr. David', 'Sarah Baldwin (Not!Sarah)', 'Michael (the Distortion)', 'Stranger!Danny', 'Gerard Keay (dead)', 'Jan Kilbride', 'Mordechai Lukas', 'James Wright (Jonah Magnus)', 'Simon Fairchild', 'Dr. Jonathan Fanshawe', 'Mikaele Salesa', 'Jonathan Sims (season 1)', 'Breekon & Hope (single answer)', 'Georgie Barker', 'Sasha James (original)', 'Jane Prentiss', 'Julia Montauk', 'Elias Bouchard (original)', 'Alice "Daisy" Tonner (bestial)', 'Sergey Ushanka (post-uploading)'
+		]
+		if (message.content.startsWith(`${prefix}fmk`)) {
+		   message.channel.send(`**Fuck, Marry, Kill:** ${list1[Math.floor(Math.random() * list1.length)]}, ${list2[Math.floor(Math.random() * list2.length)]}, ${list3[Math.floor(Math.random() * list3.length)]}`);
+		}
+});
+
 client.login(process.env.TOKEN);
