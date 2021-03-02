@@ -66,7 +66,7 @@ client.on('message', message => {
 			 'Helen Richardson (human)', 'Danny Stoker', 'Fiona Law', 'Agnes Montague', 'Jurgen Leitner', 'Alfred Grifter', 'Sebastian Skinner (unobservant plumber)', 'the Angler Fish', 'Jonathan Sims (season 3)', 'Hezekiah Wakely', 'Dr. David', 'Sarah Baldwin (Not!Sarah)', 'Michael (the Distortion)', 'Stranger!Danny', 'Gerard Keay (dead)', 'Jan Kilbride', 'Mordechai Lukas', 'James Wright (Jonah Magnus)', 'Simon Fairchild', 'Dr. Jonathan Fanshawe', 'Mikaele Salesa', 'Jonathan Sims (season 1)', 'Breekon & Hope (single answer)', 'Georgie Barker', 'Sasha James (original)', 'Jane Prentiss', 'Julia Montauk', 'Elias Bouchard (original)', 'Alice "Daisy" Tonner (bestial)', 'Sergey Ushanka (post-uploading)'
 		]
 		if (message.content.startsWith(`${prefix}fmk`)) {
-		   message.channel.send(`**Fuck, Marry, Kill:** ${list1[Math.floor(Math.random() * list1.length)]}, ${list2[Math.floor(Math.random() * list2.length)]}, ${list3[Math.floor(Math.random() * list3.length)]}`);
+		   message.channel.send(`**Fuck, Marry, Kill:**\n\n${list1[Math.floor(Math.random() * list1.length)]}\n${list2[Math.floor(Math.random() * list2.length)]}\n${list3[Math.floor(Math.random() * list3.length)]}`);
 		}
 });
 
