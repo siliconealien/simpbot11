@@ -5,6 +5,7 @@ const Discord = require('discord.js');
 const { prefix } = require("./config.json");
 const { checkServerIdentity } = require('tls');
 const story = require("./story/simpforsimp.json")
+const _ = require('lodash');
 
 const client = new Discord.Client();
 client.commands = new Discord.Collection();
@@ -56,18 +57,107 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-		const list1 = [
-		   'Basira Hussain', 'Oliver Banks', 'Maxwell Rayner (human-shaped)', 'Father Burroughs', 'Benoît Maçon', 'Jordan Kennedy', 'Natalie Ennis', 'Jonathan Sims (season 5)', 'Albrecht von Closen', 'Robert Smirke', 'Annabelle Cane', 'Gregor Orsinov', 'Melanie King', 'Timothy Stoker', 'Jonah Magnus (circa 1800s)', 'Monster Pig', 'Trevor Herbert', 'Graham Folger (original)', 'Dr. Lionel Elliott (bone apple teeth)', 'Gertrude Robinson', 'Zhang Xiaoling', 'Nathaniel Lukas', 'Jude Perry', 'Toby Carlisle', 'Barnabas Bennett', 'Neil Lagorio', '"Tom" (Not!Sasha\'s totally real boyfriend)', 'Martin\'s mother', 'Joshua Gillespie', 'a wholeass Lukas family gangbang', 'Eric Delano', 'Gerard Keay (alive)'
-		]
-		const list2 = [
-			 'Elias Bouchard (Jonah Magnus)', 'Not!Graham Folger', 'Martin Blackwood', 'John Amherst', 'Manuela Dominguez', 'Daniel Rawlings (Not!Daniel, the taxidermist)', 'Diego Molina', 'Alice "Daisy" Tonner (human)', 'Jared Hopworth', 'Evan Lukas', 'Peter Lukas', 'Adelard Dekker', 'Rosie Zampano', 'Michael Crew', 'Arthur Nolan', 'Jack Barnabas', 'Not!Sasha', 'Dr. Jane Doe', 'Stranger!Tim', 'Benjamin Hatendi', 'Michael Shelley (human)', 'Jonathan Sims (season 2)', 'the Anatomy Class', 'Maxwell Rayner (black goo)', 'Raymond Fielding', 'Jonah/Elias as the post-Change static-spewing dark entity', 'Jonathan Sims (season 4)', 'Robert Montauk', 'Karolina Karolina Górka (took a nice nap on the tube)', 'Mary Keay', 'Tom Haan', 'Helen (the Distortion)'
-		]
-		const list3 = [
-			 'Helen Richardson (human)', 'Danny Stoker', 'Fiona Law', 'Agnes Montague', 'Jurgen Leitner', 'Alfred Grifter', 'Sebastian Skinner (unobservant plumber)', 'the Angler Fish', 'Jonathan Sims (season 3)', 'Hezekiah Wakely', 'Dr. David', 'Sarah Baldwin (Not!Sarah)', 'Michael (the Distortion)', 'Stranger!Danny', 'Gerard Keay (dead)', 'Jan Kilbride', 'Mordechai Lukas', 'James Wright (Jonah Magnus)', 'Simon Fairchild', 'Dr. Jonathan Fanshawe', 'Mikaele Salesa', 'Jonathan Sims (season 1)', 'Breekon & Hope (single answer)', 'Georgie Barker', 'Sasha James (original)', 'Jane Prentiss', 'Julia Montauk', 'Elias Bouchard (original)', 'Alice "Daisy" Tonner (bestial)', 'Sergey Ushanka (post-uploading)'
-		]
-		if (message.content.startsWith(`${prefix}fmk`)) {
-		   message.channel.send(`**Fuck, Marry, Kill:**\n\n${list1[Math.floor(Math.random() * list1.length)]}\n${list2[Math.floor(Math.random() * list2.length)]}\n${list3[Math.floor(Math.random() * list3.length)]}`);
-		}
+  if (message.content === `${prefix}fmk`) {
+
+    let x = [	' Adelard Dekker',
+    					' Agnes Montague',
+    					' Albrecht von Closen',
+    					' Alfred Grifter',
+    					' Alice "Daisy" Tonner (bestial)',
+    					' Alice "Daisy" Tonner (human)',
+    					' Annabelle Cane',
+    					' Arthur Nolan',
+    					' Barnabas Bennett',
+    					' Basira Hussain',
+    					' Benjamin Hatendi',
+    					' Benoît Maçon',
+    					' Breekon & Hope (single answer)',
+    					' Daniel Rawlings (Not!Daniel, the taxidermist)',
+    					' Danny Stoker',
+    					' Diego Molina',
+    					' Dr. David',
+    					' Dr. Jane Doe',
+    					' Dr. Jonathan Fanshawe',
+    					' Dr. Lionel Elliott (bone apple teeth)',
+    					' Elias Bouchard (Jonah Magnus)',
+    					' Elias Bouchard (original)',
+    					' Eric Delano',
+    					' Evan Lukas',
+    					' Father Burroughs',
+    					' Fiona Law',
+    					' Georgie Barker',
+    					' Gerard Keay (alive)',
+    					' Gerard Keay (dead)',
+    					' Gertrude Robinson',
+    					' Graham Folger (original)',
+    					' Gregor Orsinov',
+    					' Helen (the Distortion)',
+    					' Helen Richardson (human)',
+    					' Hezekiah Wakely',
+    					' Jack Barnabas',
+    					' James Wright (Jonah Magnus)',
+    					' Jan Kilbride',
+    					' Jane Prentiss',
+    					' Jared Hopworth',
+    					' John Amherst',
+    					' Jonah/Elias as the post-Change static-spewing dark entity',
+    					' Jonah Magnus (circa 1800s)',
+    					' Jonathan Sims (season 1)',
+    					' Jonathan Sims (season 2)',
+    					' Jonathan Sims (season 3)',
+    					' Jonathan Sims (season 4)',
+    					' Jonathan Sims (season 5)',
+    					' Jordan Kennedy',
+    					' Joshua Gillespie',
+    					' Jude Perry',
+    					' Julia Montauk',
+    					' Jurgen Leitner',
+    					' Karolina Górka (took a nice nap on the tube)',
+    					' Manuela Dominguez',
+    					' Martin Blackwood',
+    					' Martin\'s mother',
+    					' Mary Keay',
+    					' Maxwell Rayner (black goo)',
+    					' Maxwell Rayner (human-shaped)',
+    					' Melanie King',
+    					' Michael (the Distortion)',
+    					' Michael Crew',
+    					' Michael Shelley (human)',
+    					' Mikaele Salesa',
+    					' Monster Pig',
+    					' Mordechai Lukas',
+    					' Natalie Ennis',
+    					' Nathaniel Lukas',
+    					' Neil Lagorio',
+    					' Not!Graham Folger',
+    					' Not!Sasha',
+    					' Oliver Banks',
+    					' Peter Lukas',
+    					' Raymond Fielding',
+    					' Robert Montauk',
+    					' Robert Smirke',
+    					' Rosie Zampano',
+    					' Sarah Baldwin (Not!Sarah)',
+    					' Sasha James (original)',
+    					' Sebastian Skinner (unobservant plumber)',
+    					' Sergey Ushanka (post-uploading)',
+    					' Simon Fairchild',
+    					' Stranger!Danny',
+    					' Stranger!Tim',
+    					' Timothy Stoker',
+    					' Toby Carlisle',
+    					' "Tom" (Not!Sasha\'s totally real boyfriend)',
+    					' Tom Haan',
+    					' Trevor Herbert',
+    					' Zhang Xiaoling',
+    					' a wholeass Lukas family gangbang',
+    					' the Anatomy Class',
+    					' the Angler Fish'];
+
+    let result = _.sampleSize(x, 3);
+
+  	message.channel.send(`**Fuck, Marry, Kill:**${result}`);
+  }
 });
 
 client.login(process.env.TOKEN);
