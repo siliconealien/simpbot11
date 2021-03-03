@@ -87,7 +87,7 @@ client.on('message', message => {
     					' Fiona Law',
     					' Georgie Barker',
     					' Gerard Keay (alive)',
-    					' Gerard Keay (dead)',
+    					' Gerard Keay (deceased—do you burn the page?)',
     					' Gertrude Robinson',
     					' Graham Folger (original)',
     					' Gregor Orsinov',
