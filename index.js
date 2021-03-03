@@ -117,7 +117,7 @@ client.on('message', message => {
     					' Martin Blackwood',
     					' Martin\'s mother',
     					' Mary Keay',
-    					' Maxwell Rayner (black goo)',
+    					' Maxwell Rayner (black goo form)',
     					' Maxwell Rayner (human-shaped)',
     					' Melanie King',
     					' Michael (the Distortion)',
