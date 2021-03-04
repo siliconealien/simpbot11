@@ -44,8 +44,8 @@ client.on('message', message => {
     let targetMember = message.mentions.members.first();
     if(!targetMember) return message.reply('**you must tag a user to nyaa at them!**');
     message.channel.send(`NYAA~ hewwo <@${targetMember.user.id}> >:3c\napowogies fow da rawrception X3`, { files: ["./img/nya.gif"] });
-	} else if (message.content.startsWith(`${prefix}sbicon`)) {
-		message.channel.send("**Bastard man artist cred**\nTwitter: __@WaldosAkimbo__\nTumblr: __waldos-art__", { files: ["./img/jonah.png"] })
+	} else if (message.content.startsWith(`${prefix}sbart`)) {
+		message.channel.send("**Bastard man artist credit**\nTwitter: __@WaldosAkimbo__\nTumblr: __waldos-art__", { files: ["./img/jonah.png"] })
 	};
 });
 
