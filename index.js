@@ -2,6 +2,7 @@ require('dotenv').config();
 const token = process.env.TOKEN;
 const fs = require('fs');
 const Discord = require('discord.js');
+const { Client, MessageEmbed } = require('discord.js');
 const { prefix } = require("./config.json");
 const { checkServerIdentity } = require('tls');
 const story = require("./story/simpforsimp.json")
@@ -159,6 +160,23 @@ client.on('message', message => {
     let result = _.sampleSize(x, 3);
 
   	message.channel.send(`**Fuck, Marry, Kill:**${result}`);
+  }
+});
+
+client.on('message', message => {
+  if (message.content === `${prefix}give`) {
+    const embed = new MessageEmbed()
+		.setColor('#32cd32')
+		.setTitle('Charities Simp-bot simps for')
+		.setDescription('Hosting a bot is not free.\n\nBut instead of giving us money, why don\'t you check out a few of our favorite causes?')
+		.addFields(
+			{ name: 'International Dark-Sky Association', value: '[darksky.org](https://www.darksky.org/)', inline: true },
+			{ name: 'Save Our Cemeteries', value: '[saveourcemeteries.org](https://www.saveourcemeteries.org/)', inline: true },
+		)
+		.addField('Organization for Transformative Works', '[transformativeworks.org](https://www.transformativeworks.org)', true)
+		.setTimestamp()
+		.setFooter('Thank you for all your support!', 'https://i.imgur.com/jySxwK6.png');
+    message.channel.send(embed);
   }
 });
 
