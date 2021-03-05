@@ -180,4 +180,15 @@ client.on('message', message => {
   }
 });
 
+client.on('message', message => {
+  if (message.content === `${prefix}sbserver`) {
+    const embed = new MessageEmbed()
+		.setColor('#32cd32')
+		.setTitle('Simp-bot Discord')
+    .setURL('https://discord.gg/uNtymmvXCd')
+		.setDescription('You found a secret command to unlock a problematic server invite!');
+    message.channel.send(embed);
+  }
+});
+
 client.login(process.env.TOKEN);
