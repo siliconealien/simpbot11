@@ -164,7 +164,7 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-  if (message.content === `${prefix}give`) {
+  if (message.content === `${prefix}sbgive`) {
     const embed = new MessageEmbed()
 		.setColor('#32cd32')
 		.setTitle('Charities Simp-bot simps for')
