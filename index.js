@@ -1,7 +1,8 @@
 require('dotenv').config();
 const token = process.env.TOKEN;
 const fs = require('fs');
-const { Discord, Client, MessageEmbed } = require('discord.js');
+const Discord = require('discord.js');
+const { Client, MessageEmbed } = require('discord.js');
 const { prefix } = require("./config.json");
 const { checkServerIdentity } = require('tls');
 const story = require("./story/simpforsimp.json")
