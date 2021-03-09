@@ -181,6 +181,21 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
+  if (message.content === `${prefix}big`) {
+
+    const ytdl = require('ytdl-core');
+    let voiceChannel = client.channels.cache.get('818672431912714243');
+
+    voiceChannel.join().then(connection => {
+    const stream = ytdl('https://youtu.be/PSvP48Nj3TA', { filter: 'audioonly' });
+    const dispatcher = connection.play(stream);
+
+    dispatcher.on('finish', () => voiceChannel.leave());
+    })
+  }
+});
+
+client.on('message', message => {
   if (message.content === `${prefix}sbserver`) {
     const embed = new MessageEmbed()
 		.setColor('#32cd32')
