@@ -24,6 +24,14 @@ client.once('ready', () => {
 });
 
 client.on('message', message => {
+	if (message.content === `${prefix}simpguilds`) {
+		client.guilds.cache.forEach(guild => {
+		  console.log(`${guild.name} | ${guild.id}`);
+		})
+	}
+});
+
+client.on('message', message => {
 	if (!message.content.startsWith(prefix) || message.author.bot) return;
 
 	const args = message.content.slice(prefix.length).trim().split(/ +/);
