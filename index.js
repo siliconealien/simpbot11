@@ -180,6 +180,18 @@ client.on('message', message => {
   }
 });
 
+client.on('message', async message => {
+  if (!message.guild) return;
+  if (message.content === `${prefix}big`) {
+  if (message.member.voice.channel) {
+      const connection = await message.member.voice.channel.join();
+      const dispatcher = connection.play('./misc/bigboy.mp3');
+    } else {
+      message.reply('You need to join a voice channel first!');
+    }
+  }
+});
+
 client.on('message', message => {
   if (message.content === `${prefix}sbserver`) {
     const embed = new MessageEmbed()
