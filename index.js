@@ -189,8 +189,6 @@ client.on('message', message => {
     voiceChannel.join().then(connection => {
     const stream = ytdl('https://youtu.be/PSvP48Nj3TA', { filter: 'audioonly' });
     const dispatcher = connection.play(stream);
-
-    dispatcher.on('finish', () => voiceChannel.leave());
     })
   }
 });
