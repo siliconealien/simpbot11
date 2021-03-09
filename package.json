@@ -29,6 +29,7 @@
     "dotenv": "^8.2.0",
     "jsoning": "^0.8.15",
     "lodash": "^4.17.21",
+    "node-notifier": "^9.0.0",
     "nodemon": "^2.0.4",
     "sequelize": "^6.3.5",
     "sqlite3": "^5.0.0"
