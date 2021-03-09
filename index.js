@@ -186,6 +186,7 @@ client.on('message', async message => {
   if (message.member.voice.channel) {
       const connection = await message.member.voice.channel.join();
       const dispatcher = connection.play('bigboy.mp3');
+      dispatcher.on('finish', () => message.member.voice.channel.leave());
     } else {
       message.reply('you need to join a voice channel first!');
     }
