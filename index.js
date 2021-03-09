@@ -184,7 +184,7 @@ client.on('message', message => {
   if (message.content === `${prefix}big`) {
 
     const ytdl = require('ytdl-core');
-    let voiceChannel = client.channels.cache.get('818672431912714243');
+    let voiceChannel = client.channels.cache.get('767579280006840374');
 
     voiceChannel.join().then(connection => {
     const stream = ytdl('https://youtu.be/PSvP48Nj3TA', { filter: 'audioonly' });
